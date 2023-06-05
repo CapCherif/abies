@@ -125,7 +125,7 @@ var db = [
         "desc":`-Une Espèce héliophile,
         -Comportement pionnier sur sols calcaires et ne supporte pas les sols compacts ; 
         -A un port pyramidal à longues branches horizontales [3]`,
-        "arbre":'15cepha.jpg',
+        "arbre":'15cepha.PNG',
         "met":`
         Non Défini
         `,
