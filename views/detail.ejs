@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Almarai:wght@300&family=Dancing+Script&family=Estonia&family=Grape+Nuts&family=Nunito:wght@300&family=Overpass:wght@100&family=Rubik+Iso&display=swap" 
+rel="stylesheet">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <nav>
+        <!-- <img src="{% static 'img/logo.png' %}" alt=""> -->
+        <div id="logo">
+            <img src="img/leaf.png" alt="">
+            <h6>Abies</h6>
+        </div>
+        <div id="links" style="display:flex">
+            <a href="/">Accueil</a>
+            <a href="/search" >Arbres</a>
+           
+            <a href="/contact">Contact</a>
+        
+            
+        </div>
+    </nav>
+
+
+
+    <div style="max-width:1000px; margin:120px auto; padding: 10px;">
+       
+      
+            <div class="arbre_res">
+                <h3 id="espece"></h3>
+                
+                
+                <h3 >Région : </h3>
+                <ul id="region">
+
+                </ul>
+
+                <h3 >Description : </h3>
+                <ul id="desc">
+
+                </ul>
+                    
+                                  
+                <h3>Taxonomie</h3>
+                <ul id="tax">
+
+                </ul>
+
+                <img id="imgarb" src="" alt="">
+
+                <div class="flexible" style="margin-top: 50px ;">
+                    <div style="width:500px">
+                        <h3>Métabolite secondaire : </h3>
+                        <ul id="met">
+
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Structure Chimique</h3>
+                        <img id="str" style="width:400px;" src="" alt="">
+                    </div>
+                </div>
+
+
+                <div>
+                    <h3>Réferences:</h3>
+                    <ul id="ref" style="color:gray;">
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+      
+        
+
+
+   
+    </div>
+
+
+    <script src="js/jq.js"></script>
+    <script src="js/detail.js"></script>
+</body>
+</html>

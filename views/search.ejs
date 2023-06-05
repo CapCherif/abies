@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Almarai:wght@300&family=Dancing+Script&family=Estonia&family=Grape+Nuts&family=Nunito:wght@300&family=Overpass:wght@100&family=Rubik+Iso&display=swap" 
+rel="stylesheet">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <nav>
+        <!-- <img src="{% static 'img/logo.png' %}" alt=""> -->
+        <div id="logo">
+            <img src="img/leaf.png" alt="">
+            <h6>Abies</h6>
+        </div>
+        <div id="links" style="display:flex">
+            <a href="/">Accueil</a>
+            <a href="/search" class="current">Arbres</a>
+           
+            <a href="/contact">Contact</a>
+        
+          
+            
+        </div>
+    </nav>
+
+    
+    <form action="/search/" method="POST" id="search">
+        <h4>Rechercher un type :</h4>
+        <p>Vous pouvez effectuer une recherche sur les différents types Abies</p>
+        <hr>
+        
+        <input type="text" placeholder="Type.." required name="espece">
+        <button type="submit"><i class="fa-solid fa-search"></i></button>
+    </form>
+
+
+    <div style="max-width:1000px; margin:20px auto; padding: 10px 0px;" id="res_rec">
+        
+            
+        
+    </div>
+
+
+    <script src="js/search.js"></script>
+</body>
+</html>
